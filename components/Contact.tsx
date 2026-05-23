@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Mail, Send, MapPin } from "lucide-react";
+import { submitContact } from "@/app/actions";
 
 const GithubIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -24,15 +25,20 @@ const contactLinks = [
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   const handleSubmit = async () => {
     if (!form.name || !form.email || !form.message) return;
     setStatus("sending");
-    await new Promise(r => setTimeout(r, 1200));
-    setStatus("sent");
-    setForm({ name: "", email: "", message: "" });
-    setTimeout(() => setStatus("idle"), 4000);
+    try {
+      await submitContact(form);
+      setStatus("sent");
+      setForm({ name: "", email: "", message: "" });
+      setTimeout(() => setStatus("idle"), 4000);
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 4000);
+    }
   };
 
   return (
@@ -111,7 +117,7 @@ export default function Contact() {
             />
             <button onClick={handleSubmit} disabled={status !== "idle"}
               style={{
-                background: status === "sent" ? "var(--accent-2)" : "var(--accent)",
+                background: status === "sent" ? "var(--accent-2)" : status === "error" ? "#ff4d4d" : "var(--accent)",
                 color: "#000", border: "none", borderRadius: 6,
                 padding: "14px 28px", fontSize: 14, fontWeight: 700,
                 cursor: status !== "idle" ? "not-allowed" : "pointer",
@@ -121,7 +127,7 @@ export default function Contact() {
               }}
             >
               <Send size={15} />
-              {status === "idle" ? "Send Message" : status === "sending" ? "Sending..." : "Message Sent!"}
+              {status === "idle" ? "Send Message" : status === "sending" ? "Sending..." : status === "sent" ? "Message Sent!" : "Failed — Try Again"}
             </button>
             <p style={{ fontSize: 12, color: "var(--text-dim)" }} className="mono">
               * Or email directly: gautamkumarnita@gmail.com
