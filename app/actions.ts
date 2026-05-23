@@ -5,7 +5,7 @@ export async function submitContact(data: {
   email: string
   message: string
 }) {
-  const accessKey = process.env.WEB3FORMS_ACCESS_KEY
+  const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
   if (!accessKey) throw new Error('WEB3FORMS_ACCESS_KEY is not set')
 
   const res = await fetch('https://api.web3forms.com/submit', {

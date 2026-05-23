@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { Mail, Send, MapPin } from "lucide-react";
-import { submitContact } from "@/app/actions";
 
 const GithubIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -31,7 +30,19 @@ export default function Contact() {
     if (!form.name || !form.email || !form.message) return;
     setStatus("sending");
     try {
-      await submitContact(form);
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: "10e2bda9-80f6-4842-b1d9-ef117ddb875f",
+          subject: `Portfolio contact from ${form.name}`,
+          from_name: form.name,
+          email: form.email,
+          message: form.message,
+        }),
+      });
+      const json = await res.json();
+      if (!json.success) throw new Error(json.message);
       setStatus("sent");
       setForm({ name: "", email: "", message: "" });
       setTimeout(() => setStatus("idle"), 4000);
