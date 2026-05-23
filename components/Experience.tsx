@@ -51,13 +51,30 @@ export default function Experience() {
                   </li>
                 ))}
               </ul>
-              <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 28 }}>
-                {["FastAPI", "Celery", "Redis", "Docker", "WebSockets"].map(t => (
-                  <span key={t} style={{
-                    background: "var(--bg-3)", border: "1px solid var(--border)",
-                    padding: "4px 12px", borderRadius: 4, fontSize: 12, color: "var(--text-muted)",
-                  }} className="mono">{t}</span>
-                ))}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16, marginTop: 28 }}>
+                <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                  {["FastAPI", "Celery", "Redis", "Docker", "WebSockets"].map(t => (
+                    <span key={t} style={{
+                      background: "var(--bg-3)", border: "1px solid var(--border)",
+                      padding: "4px 12px", borderRadius: 4, fontSize: 12, color: "var(--text-muted)",
+                    }} className="mono">{t}</span>
+                  ))}
+                </div>
+                <a href="https://drive.google.com/file/d/1a6N1xMBv0PVAzM2z-OtS-fRMGyMnuWln/view?usp=sharing"
+                  target="_blank"
+                  style={{
+                    display: "inline-flex", alignItems: "center", gap: 8,
+                    padding: "8px 18px", borderRadius: 4, fontSize: 12, fontWeight: 600,
+                    border: "1px solid var(--accent)", color: "var(--accent)",
+                    textDecoration: "none", transition: "all 0.2s",
+                    background: "var(--accent-dim)",
+                  }}
+                  className="mono"
+                  onMouseEnter={e => { e.currentTarget.style.background = "var(--accent)"; e.currentTarget.style.color = "#000"; }}
+                  onMouseLeave={e => { e.currentTarget.style.background = "var(--accent-dim)"; e.currentTarget.style.color = "var(--accent)"; }}
+                >
+                  ↗ View Certificate
+                </a>
               </div>
             </div>
 
