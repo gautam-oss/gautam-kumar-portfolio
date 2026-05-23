@@ -51,7 +51,7 @@ export default function Projects() {
               <span style={{
                 position: "absolute", right: 40, top: 20,
                 fontSize: 120, fontWeight: 900, color: "rgba(255,255,255,0.02)",
-                lineHeight: 1, userSelect: "none",
+                lineHeight: 1, userSelect: "none", pointerEvents: "none",
               }}>{p.num}</span>
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: 32, alignItems: "flex-start" }} className="proj-head">
