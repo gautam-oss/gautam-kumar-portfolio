@@ -32,69 +32,89 @@ export default function Hero() {
         pointerEvents: "none",
       }} />
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", width: "100%" }}>
-        <div style={{
-          display: "inline-flex", alignItems: "center", gap: 8,
-          background: "var(--bg-3)", border: "1px solid var(--border)",
-          borderRadius: 100, padding: "6px 16px", marginBottom: 48,
-          animation: "fadeUp 0.6s ease both",
-        }}>
-          <span style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--accent-2)", display: "inline-block", boxShadow: "0 0 8px var(--accent-2)" }} />
-          <span className="mono" style={{ fontSize: 12, color: "var(--text-muted)", letterSpacing: 1 }}>Available for opportunities</span>
-        </div>
-
-        <div style={{ animation: "fadeUp 0.6s 0.1s ease both", opacity: 0 }}>
-          <p className="mono" style={{ fontSize: 13, color: "var(--accent)", letterSpacing: 3, marginBottom: 20, fontWeight: 400 }}>GAUTAM KUMAR</p>
-          <h1 style={{
-            fontSize: "clamp(52px, 8vw, 96px)", fontWeight: 800,
-            lineHeight: 1.0, letterSpacing: -3, marginBottom: 32, color: "var(--text)",
+      <div style={{ maxWidth: 1200, margin: "0 auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 64 }} className="hero-inner">
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{
+            display: "inline-flex", alignItems: "center", gap: 8,
+            background: "var(--bg-3)", border: "1px solid var(--border)",
+            borderRadius: 100, padding: "6px 16px", marginBottom: 48,
+            animation: "fadeUp 0.6s ease both",
           }}>
-            Backend<br />
-            <span style={{ color: "var(--text-dim)" }}>Engineer.</span>
-          </h1>
+            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--accent-2)", display: "inline-block", boxShadow: "0 0 8px var(--accent-2)" }} />
+            <span className="mono" style={{ fontSize: 12, color: "var(--text-muted)", letterSpacing: 1 }}>Available for opportunities</span>
+          </div>
+
+          <div style={{ animation: "fadeUp 0.6s 0.1s ease both", opacity: 0 }}>
+            <p className="mono" style={{ fontSize: 13, color: "var(--accent)", letterSpacing: 3, marginBottom: 20, fontWeight: 400 }}>GAUTAM KUMAR</p>
+            <h1 style={{
+              fontSize: "clamp(52px, 8vw, 96px)", fontWeight: 800,
+              lineHeight: 1.0, letterSpacing: -3, marginBottom: 32, color: "var(--text)",
+            }}>
+              Backend<br />
+              <span style={{ color: "var(--text-dim)" }}>Engineer.</span>
+            </h1>
+          </div>
+
+          <div style={{ animation: "fadeUp 0.6s 0.2s ease both", opacity: 0 }}>
+            <p style={{ fontSize: 18, color: "var(--text-muted)", maxWidth: 560, lineHeight: 1.7, marginBottom: 48, fontWeight: 400 }}>
+              2026 Electrical Engineering graduate from <span style={{ color: "var(--text)" }}>NIT Agartala</span>. I build distributed systems, ship APIs, and own the stack end-to-end — FastAPI, Python, Docker, PostgreSQL, Redis.
+            </p>
+          </div>
+
+          <div style={{ display: "flex", gap: 16, flexWrap: "wrap", animation: "fadeUp 0.6s 0.3s ease both", opacity: 0 }}>
+            <a href="#contact" style={{
+              background: "var(--accent)", color: "#000",
+              padding: "14px 32px", borderRadius: 4,
+              fontWeight: 700, fontSize: 14, textDecoration: "none",
+              letterSpacing: 0.5, transition: "all 0.2s",
+              display: "inline-flex", alignItems: "center", gap: 8,
+            }}
+            onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 32px rgba(232,255,71,0.3)"; }}
+            onMouseLeave={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; }}
+            >
+              <Mail size={16} /> Get in touch
+            </a>
+            <a href="https://github.com/gautam-oss" target="_blank" style={{
+              background: "transparent", color: "var(--text)",
+              padding: "14px 32px", borderRadius: 4, border: "1px solid var(--border)",
+              fontWeight: 600, fontSize: 14, textDecoration: "none",
+              letterSpacing: 0.5, transition: "all 0.2s",
+              display: "inline-flex", alignItems: "center", gap: 8,
+            }}
+            onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--border-hover)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.transform = ""; }}
+            >
+              <GithubIcon size={16} /> GitHub
+            </a>
+            <a href="https://linkedin.com/in/gautam-oss" target="_blank" style={{
+              background: "transparent", color: "var(--text-muted)",
+              padding: "14px", borderRadius: 4, border: "1px solid var(--border)",
+              transition: "all 0.2s", display: "inline-flex", alignItems: "center",
+            }}
+            onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--border-hover)"; e.currentTarget.style.color = "var(--text)"; }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.color = "var(--text-muted)"; }}
+            >
+              <LinkedinIcon size={16} />
+            </a>
+          </div>
         </div>
 
-        <div style={{ animation: "fadeUp 0.6s 0.2s ease both", opacity: 0 }}>
-          <p style={{ fontSize: 18, color: "var(--text-muted)", maxWidth: 560, lineHeight: 1.7, marginBottom: 48, fontWeight: 400 }}>
-            2026 Electrical Engineering graduate from <span style={{ color: "var(--text)" }}>NIT Agartala</span>. I build distributed systems, ship APIs, and own the stack end-to-end — FastAPI, Python, Docker, PostgreSQL, Redis.
-          </p>
-        </div>
-
-        <div style={{ display: "flex", gap: 16, flexWrap: "wrap", animation: "fadeUp 0.6s 0.3s ease both", opacity: 0 }}>
-          <a href="#contact" style={{
-            background: "var(--accent)", color: "#000",
-            padding: "14px 32px", borderRadius: 4,
-            fontWeight: 700, fontSize: 14, textDecoration: "none",
-            letterSpacing: 0.5, transition: "all 0.2s",
-            display: "inline-flex", alignItems: "center", gap: 8,
-          }}
-          onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 32px rgba(232,255,71,0.3)"; }}
-          onMouseLeave={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; }}
-          >
-            <Mail size={16} /> Get in touch
-          </a>
-          <a href="https://github.com/gautam-oss" target="_blank" style={{
-            background: "transparent", color: "var(--text)",
-            padding: "14px 32px", borderRadius: 4, border: "1px solid var(--border)",
-            fontWeight: 600, fontSize: 14, textDecoration: "none",
-            letterSpacing: 0.5, transition: "all 0.2s",
-            display: "inline-flex", alignItems: "center", gap: 8,
-          }}
-          onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--border-hover)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
-          onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.transform = ""; }}
-          >
-            <GithubIcon size={16} /> GitHub
-          </a>
-          <a href="https://linkedin.com/in/gautam-oss" target="_blank" style={{
-            background: "transparent", color: "var(--text-muted)",
-            padding: "14px", borderRadius: 4, border: "1px solid var(--border)",
-            transition: "all 0.2s", display: "inline-flex", alignItems: "center",
-          }}
-          onMouseEnter={e => { e.currentTarget.style.borderColor = "var(--border-hover)"; e.currentTarget.style.color = "var(--text)"; }}
-          onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.color = "var(--text-muted)"; }}
-          >
-            <LinkedinIcon size={16} />
-          </a>
+        <div style={{ flexShrink: 0, animation: "fadeUp 0.6s 0.2s ease both", opacity: 0 }} className="hero-avatar">
+          <div style={{ position: "relative" }}>
+            <div style={{
+              width: 300, height: 300, borderRadius: "50%",
+              border: "1px solid var(--border)",
+              overflow: "hidden", position: "relative",
+              boxShadow: "0 0 80px rgba(232,255,71,0.06)",
+            }}>
+              <img src="/avatar.jpg" alt="Gautam Kumar" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            </div>
+            <div style={{
+              position: "absolute", inset: -1, borderRadius: "50%",
+              background: "linear-gradient(135deg, rgba(232,255,71,0.15) 0%, transparent 50%)",
+              pointerEvents: "none",
+            }} />
+          </div>
         </div>
 
         <div style={{
@@ -110,6 +130,10 @@ export default function Hero() {
       <style>{`
         @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes float { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(8px); } }
+        @media (max-width: 768px) {
+          .hero-inner { flex-direction: column-reverse !important; gap: 40px !important; }
+          .hero-avatar div div { width: 180px !important; height: 180px !important; }
+        }
       `}</style>
     </section>
   );
