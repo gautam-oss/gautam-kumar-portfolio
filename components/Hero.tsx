@@ -56,7 +56,7 @@ export default function Hero() {
 
         <div style={{ animation: "fadeUp 0.6s 0.2s ease both", opacity: 0 }}>
           <p style={{ fontSize: 18, color: "var(--text-muted)", maxWidth: 560, lineHeight: 1.7, marginBottom: 48, fontWeight: 400 }}>
-            2026 EE grad from <span style={{ color: "var(--text)" }}>NIT Agartala</span>. I build distributed systems, ship APIs, and own the stack end-to-end — FastAPI, Python, Docker, PostgreSQL, Redis.
+            2026 Electrical Engineering graduate from <span style={{ color: "var(--text)" }}>NIT Agartala</span>. I build distributed systems, ship APIs, and own the stack end-to-end — FastAPI, Python, Docker, PostgreSQL, Redis.
           </p>
         </div>
 

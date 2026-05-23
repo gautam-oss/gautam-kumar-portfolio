@@ -23,7 +23,7 @@ export default function Navbar() {
       borderBottom: scrolled ? "1px solid var(--border)" : "none",
     }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 32px", display: "flex", alignItems: "center", justifyContent: "space-between", height: 64 }}>
-        <span className="mono" style={{ fontSize: 13, color: "var(--accent)", letterSpacing: 2, fontWeight: 500 }}>GK.DEV</span>
+        <span className="mono" style={{ fontSize: 13, color: "var(--accent)", letterSpacing: 2, fontWeight: 500 }}>GautamKumar.NITA</span>
         <div style={{ display: "flex", gap: 40 }} className="desktop-nav">
           {links.map(l => (
             <a key={l} href={`#${l.toLowerCase()}`} style={{
