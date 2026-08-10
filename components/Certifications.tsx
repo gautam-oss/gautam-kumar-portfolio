@@ -1,28 +1,29 @@
 "use client";
-import { Award, ExternalLink } from "lucide-react";
+import { Award } from "lucide-react";
 
 const certs = [
   {
-    title: "Backend Development Internship",
-    issuer: "Syntecxhub",
-    date: "May 2026",
-    desc: "Successfully completed a 1-month backend development internship (Apr–May 2026) with active participation and unwavering dedication.",
+    title: "Advanced Software Engineering Job Simulation",
+    issuer: "Walmart USA (via Forage)",
+    date: "2026",
+    desc: "Engineered a custom 2k-ary max heap in Java for priority insertion/extraction; designed database schemas and automated data-preprocessing pipelines for enterprise inventory datasets.",
     color: "var(--accent)",
   },
   {
-    title: "AI-Driven RNA Therapeutics: From Data to Drug Design",
-    issuer: "NIT Agartala — Dept. of CSE & Bio Engineering",
-    date: "Mar 2026",
-    desc: "5-day intensive workshop on AI applications in RNA therapeutics, drug design, and bioinformatics (23–27 March 2026).",
+    title: "AI Upskilling: Hands-On Development from Model to App",
+    issuer: "Qualcomm",
+    date: "2026",
+    desc: "Engineered and deployed 3 edge AI models (keyword spotting, gesture recognition, computer vision) using Edge Impulse; fine-tuned MobileNetV2 via transfer learning for embedded targets.",
     color: "var(--accent-2)",
   },
-  {
-    title: "Docker Certified Associate (DCA)",
-    issuer: "Docker Inc.",
-    date: "2025",
-    desc: "Industry-recognized certification covering container management, Docker Compose, networking, security, and orchestration.",
-    color: "#2496ED",
-  },
+];
+
+const coursework = [
+  "Building Event-Driven Applications in Go",
+  "Kubernetes: Microservices",
+  "Advanced SQL for Application Development",
+  "Advanced RAG Applications with Vector Databases",
+  "Migrating from REST to GraphQL",
 ];
 
 export default function Certifications() {
@@ -31,7 +32,7 @@ export default function Certifications() {
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <Label text="05 / CERTIFICATIONS" />
         <h2 style={{ fontSize: "clamp(36px,5vw,64px)", fontWeight: 800, letterSpacing: -2, marginBottom: 80, lineHeight: 1.1 }}>
-          Credentials<br /><span style={{ color: "var(--text-dim)" }}>& awards.</span>
+          Training<br /><span style={{ color: "var(--text-dim)" }}>& coursework.</span>
         </h2>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 24 }}>
@@ -57,20 +58,22 @@ export default function Certifications() {
           ))}
         </div>
 
-        {/* Best Project Award Banner */}
+        {/* Additional Coursework Banner */}
         <div style={{
           marginTop: 32,
           background: "linear-gradient(135deg, rgba(232,255,71,0.05), rgba(71,255,184,0.05))",
           border: "1px solid rgba(232,255,71,0.2)",
           borderRadius: 12, padding: 40,
-          display: "flex", gap: 24, alignItems: "center", flexWrap: "wrap",
         }}>
-          <span style={{ fontSize: 48 }}>🏆</span>
-          <div>
-            <h3 style={{ fontSize: 20, fontWeight: 700, marginBottom: 6 }}>Best Final Year Project Award</h3>
-            <p style={{ fontSize: 14, color: "var(--text-muted)" }}>
-              "Non-Invasive Glucose Monitoring" — Department of Electrical Engineering, NIT Agartala · 2026
-            </p>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 20 }}>Additional Coursework</h3>
+          <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+            {coursework.map(c => (
+              <span key={c} style={{
+                fontSize: 13, padding: "8px 16px",
+                background: "var(--bg-3)", border: "1px solid var(--border)",
+                borderRadius: 100, color: "var(--text-muted)",
+              }} className="mono">{c}</span>
+            ))}
           </div>
         </div>
       </div>

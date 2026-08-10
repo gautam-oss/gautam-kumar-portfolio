@@ -10,7 +10,7 @@ export default function Footer() {
         © 2026 Gautam Kumar — Built with Next.js & deployed on Vercel
       </span>
       <span className="mono" style={{ fontSize: 12, color: "var(--text-dim)" }}>
-        gautamkumarnita@gmail.com
+        gautamkumarcareers@gmail.com
       </span>
     </footer>
   );

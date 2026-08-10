@@ -50,14 +50,14 @@ export default function Hero() {
               fontSize: "clamp(52px, 8vw, 96px)", fontWeight: 800,
               lineHeight: 1.0, letterSpacing: -3, marginBottom: 32, color: "var(--text)",
             }}>
-              Backend<br />
-              <span style={{ color: "var(--text-dim)" }}>Engineer.</span>
+              Backend &<br />
+              <span style={{ color: "var(--text-dim)" }}>AI Systems.</span>
             </h1>
           </div>
 
           <div style={{ animation: "fadeUp 0.6s 0.2s ease both", opacity: 0 }}>
-            <p style={{ fontSize: 18, color: "var(--text-muted)", maxWidth: 560, lineHeight: 1.7, marginBottom: 48, fontWeight: 400 }}>
-              2026 Electrical Engineering graduate from <span style={{ color: "var(--text)" }}>NIT Agartala</span>. I build distributed systems, ship APIs, and own the stack end-to-end — FastAPI, Python, Docker, PostgreSQL, Redis.
+            <p style={{ fontSize: 18, color: "var(--text-muted)", maxWidth: 580, lineHeight: 1.7, marginBottom: 48, fontWeight: 400 }}>
+              Final-year Electrical Engineering student at <span style={{ color: "var(--text)" }}>NIT Agartala</span>, building scalable backend systems in Java, Python, and Spring Boot — from event-driven microservices to LangChain-powered RAG pipelines.
             </p>
           </div>
 
@@ -74,7 +74,7 @@ export default function Hero() {
             >
               <Mail size={16} /> Get in touch
             </a>
-            <a href="https://github.com/gautam-oss" target="_blank" style={{
+            <a href="https://github.com/gautamkumar-oss-hub" target="_blank" style={{
               background: "transparent", color: "var(--text)",
               padding: "14px 32px", borderRadius: 4, border: "1px solid var(--border)",
               fontWeight: 600, fontSize: 14, textDecoration: "none",
@@ -86,7 +86,7 @@ export default function Hero() {
             >
               <GithubIcon size={16} /> GitHub
             </a>
-            <a href="https://linkedin.com/in/gautam-oss" target="_blank" style={{
+            <a href="https://linkedin.com/in/gautamkumar-oss" target="_blank" style={{
               background: "transparent", color: "var(--text-muted)",
               padding: "14px", borderRadius: 4, border: "1px solid var(--border)",
               transition: "all 0.2s", display: "inline-flex", alignItems: "center",

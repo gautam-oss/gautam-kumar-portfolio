@@ -16,10 +16,10 @@ const LinkedinIcon = () => (
 );
 
 const contactLinks = [
-  { icon: <Mail size={18} />, label: "gautamkumarnita@gmail.com", href: "mailto:gautamkumarnita@gmail.com", accent: "var(--accent)" },
-  { icon: <GithubIcon />, label: "github.com/gautam-oss", href: "https://github.com/gautam-oss", accent: "var(--accent)" },
-  { icon: <LinkedinIcon />, label: "linkedin.com/in/gautam-oss", href: "https://linkedin.com/in/gautam-oss", accent: "var(--accent-2)" },
-  { icon: <MapPin size={18} />, label: "Bikramganj, Bihar · Open to relocation", href: null, accent: "var(--text-muted)" },
+  { icon: <Mail size={18} />, label: "gautamkumarcareers@gmail.com", href: "mailto:gautamkumarcareers@gmail.com", accent: "var(--accent)" },
+  { icon: <GithubIcon />, label: "github.com/gautamkumar-oss-hub", href: "https://github.com/gautamkumar-oss-hub", accent: "var(--accent)" },
+  { icon: <LinkedinIcon />, label: "linkedin.com/in/gautamkumar-oss", href: "https://linkedin.com/in/gautamkumar-oss", accent: "var(--accent-2)" },
+  { icon: <MapPin size={18} />, label: "Bengaluru, Karnataka · Open to relocation", href: null, accent: "var(--text-muted)" },
 ];
 
 export default function Contact() {
@@ -141,7 +141,7 @@ export default function Contact() {
               {status === "idle" ? "Send Message" : status === "sending" ? "Sending..." : status === "sent" ? "Message Sent!" : "Failed — Try Again"}
             </button>
             <p style={{ fontSize: 12, color: "var(--text-dim)" }} className="mono">
-              * Or email directly: gautamkumarnita@gmail.com
+              * Or email directly: gautamkumarcareers@gmail.com
             </p>
           </div>
         </div>

@@ -3,23 +3,23 @@
 const skillGroups = [
   {
     category: "Languages",
-    items: ["Python", "TypeScript", "JavaScript", "SQL", "Bash", "C"],
+    items: ["Java", "Python", "JavaScript", "C++", "SQL"],
   },
   {
-    category: "Frameworks",
-    items: ["FastAPI", "Django", "Flask", "React", "SQLAlchemy", "Pydantic", "Celery", "Alembic"],
+    category: "Frameworks & Libraries",
+    items: ["Spring Boot", "FastAPI", "LangChain", "Django", "React", "Node.js"],
   },
   {
-    category: "Databases & Caching",
-    items: ["PostgreSQL", "Redis", "MongoDB", "MySQL", "Elasticsearch"],
+    category: "Databases",
+    items: ["PostgreSQL", "MongoDB", "Redis"],
   },
   {
-    category: "DevOps & Cloud",
-    items: ["Docker", "AWS (EC2, S3, RDS, ECR)", "GitHub Actions", "Nginx", "Vercel", "Render", "Linux"],
+    category: "Cloud & DevOps",
+    items: ["AWS", "Docker", "Kubernetes", "Minikube", "Jenkins (CI/CD)", "Apache Kafka", "RabbitMQ", "Git", "Grafana", "Prometheus"],
   },
   {
-    category: "Tools & Practices",
-    items: ["Git", "REST APIs", "WebSockets", "GraphQL", "JWT", "Pytest", "Postman", "Swagger"],
+    category: "Concepts",
+    items: ["System Design", "Microservices", "Event-Driven Architecture", "Distributed Systems", "Data Structures & Algorithms", "Retrieval-Augmented Generation", "Vector Search", "Caching Strategies", "Database Indexing", "Query Optimization", "API Management", "Agile/Scrum"],
   },
 ];
 
