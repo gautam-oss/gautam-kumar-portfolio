@@ -57,7 +57,7 @@ export default function Hero() {
 
           <div style={{ animation: "fadeUp 0.6s 0.2s ease both", opacity: 0 }}>
             <p style={{ fontSize: 18, color: "var(--text-muted)", maxWidth: 580, lineHeight: 1.7, marginBottom: 48, fontWeight: 400 }}>
-              Final-year Electrical Engineering student at <span style={{ color: "var(--text)" }}>NIT Agartala</span>, building scalable backend systems in Java, Python, and Spring Boot — from event-driven microservices to LangChain-powered RAG pipelines.
+              Software <span style={{ color: "var(--text)" }}>Engineer</span>, building scalable backend systems in Java, Python, and Spring Boot — from event-driven microservices to LangChain-powered RAG pipelines.
             </p>
           </div>
 
