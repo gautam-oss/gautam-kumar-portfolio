@@ -10,16 +10,24 @@ const skillGroups = [
     items: ["Spring Boot", "FastAPI", "LangChain", "Django", "React", "Node.js"],
   },
   {
-    category: "Databases",
-    items: ["PostgreSQL", "MongoDB", "Redis"],
+    category: "Databases & Caching",
+    items: ["PostgreSQL", "MongoDB", "Redis", "Database Indexing", "Query Optimization"],
   },
   {
     category: "Cloud & DevOps",
-    items: ["AWS", "Docker", "Kubernetes", "Minikube", "Jenkins (CI/CD)", "Apache Kafka", "RabbitMQ", "Git", "Grafana", "Prometheus"],
+    items: ["AWS", "Docker", "Kubernetes", "Minikube", "Jenkins (CI/CD)", "Git"],
   },
   {
-    category: "Concepts",
-    items: ["System Design", "Microservices", "Event-Driven Architecture", "Distributed Systems", "Data Structures & Algorithms", "Retrieval-Augmented Generation", "Vector Search", "Caching Strategies", "Database Indexing", "Query Optimization", "API Management", "Agile/Scrum"],
+    category: "Messaging & Observability",
+    items: ["Apache Kafka", "RabbitMQ", "Grafana", "Prometheus", "Event-Driven Architecture"],
+  },
+  {
+    category: "Architecture & AI",
+    items: ["System Design", "Microservices", "Distributed Systems", "Retrieval-Augmented Generation", "Vector Search"],
+  },
+  {
+    category: "Practices",
+    items: ["Data Structures & Algorithms", "Caching Strategies", "API Management", "Agile/Scrum"],
   },
 ];
 
