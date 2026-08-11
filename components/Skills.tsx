@@ -25,10 +25,6 @@ const skillGroups = [
     category: "Architecture & AI",
     items: ["System Design", "Microservices", "Distributed Systems", "Retrieval-Augmented Generation", "Vector Search"],
   },
-  {
-    category: "Practices",
-    items: ["Data Structures & Algorithms", "Caching Strategies", "API Management", "Agile/Scrum"],
-  },
 ];
 
 export default function Skills() {
