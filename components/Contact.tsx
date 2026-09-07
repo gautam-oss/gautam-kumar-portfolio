@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Mail, Send, MapPin } from "lucide-react";
+import { Mail, Send, MapPin, Phone } from "lucide-react";
 
 const GithubIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -17,6 +17,7 @@ const LinkedinIcon = () => (
 
 const contactLinks = [
   { icon: <Mail size={18} />, label: "gautamkumarcareers@gmail.com", href: "mailto:gautamkumarcareers@gmail.com", accent: "var(--accent)" },
+  { icon: <Phone size={18} />, label: "(986) 245-4519", href: "tel:+919862454519", accent: "var(--accent)" },
   { icon: <GithubIcon />, label: "github.com/gautamkumar-oss-hub", href: "https://github.com/gautamkumar-oss-hub", accent: "var(--accent)" },
   { icon: <LinkedinIcon />, label: "linkedin.com/in/gautamkumar-oss", href: "https://linkedin.com/in/gautamkumar-oss", accent: "var(--accent-2)" },
   { icon: <MapPin size={18} />, label: "Bengaluru, Karnataka · Open to relocation", href: null, accent: "var(--text-muted)" },
