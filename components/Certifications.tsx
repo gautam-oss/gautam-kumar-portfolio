@@ -4,26 +4,34 @@ import { Award } from "lucide-react";
 const certs = [
   {
     title: "Advanced Software Engineering Job Simulation",
-    issuer: "Walmart USA (via Forage)",
+    issuer: "Forage",
     date: "2026",
     desc: "Engineered a custom 2k-ary max heap in Java for priority insertion/extraction; designed database schemas and automated data-preprocessing pipelines for enterprise inventory datasets.",
     color: "var(--accent)",
   },
   {
-    title: "AI Upskilling: Hands-On Development from Model to App",
+    title: "AI Upskilling Certificate: Hands-On Development from Model to App",
     issuer: "Qualcomm",
     date: "2026",
     desc: "Engineered and deployed 3 edge AI models (keyword spotting, gesture recognition, computer vision) using Edge Impulse; fine-tuned MobileNetV2 via transfer learning for embedded targets.",
     color: "var(--accent-2)",
   },
+  {
+    title: "Java SE 21 Developer (1Z0-830) Cert Prep",
+    issuer: "LinkedIn Learning",
+    date: "2026",
+    desc: "Preparation for Java SE 21 development, reinforcing modern Java language features and core software development practices.",
+    color: "var(--accent)",
+  },
 ];
 
 const coursework = [
-  "Building Event-Driven Applications in Go",
-  "Kubernetes: Microservices",
-  "Advanced SQL for Application Development",
-  "Advanced RAG Applications with Vector Databases",
-  "Migrating from REST to GraphQL",
+  "Backend Engineering",
+  "Scalable REST APIs",
+  "Microservices",
+  "Distributed Systems",
+  "Cloud-Native Deployment",
+  "AI-Powered Search",
 ];
 
 export default function Certifications() {

@@ -3,12 +3,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Gautam Kumar — Backend Engineer",
-  description: "Backend & Full Stack Engineer. Building scalable systems with Python, FastAPI, Docker, and more.",
-  keywords: ["Gautam Kumar", "Backend Developer", "FastAPI", "Python", "NIT Agartala"],
+  description: "Backend Engineer building scalable services with Java, Spring Boot, Python, FastAPI, microservices, and cloud-native technologies.",
+  keywords: ["Gautam Kumar", "Backend Engineer", "Spring Boot", "FastAPI", "Microservices", "NIT Agartala"],
   authors: [{ name: "Gautam Kumar" }],
   openGraph: {
     title: "Gautam Kumar — Backend Engineer",
-    description: "Backend & Full Stack Engineer building scalable distributed systems.",
+    description: "Backend Engineer building scalable distributed systems with Java, Python, and cloud-native technologies.",
     type: "website",
   },
 };

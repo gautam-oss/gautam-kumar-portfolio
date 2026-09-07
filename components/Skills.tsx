@@ -3,27 +3,31 @@
 const skillGroups = [
   {
     category: "Languages",
-    items: ["Java", "Python", "JavaScript", "C++", "SQL"],
+    items: ["Java", "Python", "SQL"],
   },
   {
     category: "Frameworks & Libraries",
-    items: ["Spring Boot", "FastAPI", "LangChain", "Django", "React", "Node.js"],
+    items: ["Spring Boot", "FastAPI", "LangChain", "GraphQL"],
   },
   {
     category: "Databases & Caching",
-    items: ["PostgreSQL", "MongoDB", "Redis", "Database Indexing", "Query Optimization"],
+    items: ["PostgreSQL", "Redis"],
   },
   {
     category: "Cloud & DevOps",
-    items: ["AWS", "Docker", "Kubernetes", "Minikube", "Jenkins (CI/CD)", "Git"],
+    items: ["AWS", "Docker", "Kubernetes", "Git", "CI/CD"],
   },
   {
     category: "Messaging & Observability",
-    items: ["Apache Kafka", "RabbitMQ", "Grafana", "Prometheus", "Event-Driven Architecture"],
+    items: ["Apache Kafka", "Event-Driven Architecture"],
   },
   {
     category: "Architecture & AI",
-    items: ["System Design", "Microservices", "Distributed Systems", "Retrieval-Augmented Generation", "Vector Search"],
+    items: ["System Design", "Microservices", "Distributed Systems", "RAG", "Vector Search"],
+  },
+  {
+    category: "Quality & Delivery",
+    items: ["Object-Oriented Programming", "Data Structures & Algorithms", "Unit Testing", "JUnit", "Mockito", "Agile/Scrum", "SDLC"],
   },
 ];
 
